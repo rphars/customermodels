@@ -13,12 +13,16 @@ on:
 
 jobs:
   check:
-    name: R ${{ matrix.r }}
-    runs-on: ubuntu-latest
+    name: ${{ matrix.os }} (R ${{ matrix.r }})
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        r: [release, devel]
+        include:
+          - { os: windows-latest, r: release }   # most students
+          - { os: macos-latest,   r: release }   # most other students
+          - { os: ubuntu-latest,  r: release }
+          - { os: ubuntu-latest,  r: devel }     # early warning for the next R
     # R-devel is an early warning for the next R version; it may fail without
     # marking the whole run as failed.
     continue-on-error: ${{ matrix.r == 'devel' }}
