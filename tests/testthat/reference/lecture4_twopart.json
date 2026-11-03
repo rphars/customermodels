@@ -1,0 +1,12 @@
+{
+  "amount_coef": {
+    "(Intercept)": 2.03828675796281,
+    "GIFTLASTRESP": -0.0272961334910302,
+    "AVERAGEGIFT": 0.0546898858133094,
+    "MAILSPERYEAR": 0.0701068644097067
+  },
+  "donated_coef": {
+    "(Intercept)": -1.17034201593737,
+    "MAILSPERYEAR": 0.369899884501878
+  }
+}

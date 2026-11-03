@@ -1,0 +1,30 @@
+{
+  "ols_coef": {
+    "(Intercept)": 402.576502047394,
+    "ticket_price": -3.87648059053246,
+    "popularity": 17.1672335593375,
+    "as.factor(weekday)2": -8.27749325298849,
+    "as.factor(weekday)3": 13.2548537363049,
+    "as.factor(weekday)4": 9.21340572176276,
+    "as.factor(weekday)5": 27.6520708241764,
+    "as.factor(weekday)6": 31.470349758981,
+    "as.factor(weekday)7": 27.3592011254518
+  },
+  "tobit_coef": {
+    "(Intercept)": 538.493770975258,
+    "ticket_price": -11.677968767696,
+    "popularity": 57.335738431582,
+    "as.factor(weekday)2": -17.1991522471105,
+    "as.factor(weekday)3": 58.882105614314,
+    "as.factor(weekday)4": 41.5871216798409,
+    "as.factor(weekday)5": 114.638227889618,
+    "as.factor(weekday)6": 119.01417520878,
+    "as.factor(weekday)7": 100.713360452699
+  },
+  "tobit_log_scale": [
+    5.75222928255436
+  ],
+  "tobit_loglik": [
+    -2604.47229796444
+  ]
+}

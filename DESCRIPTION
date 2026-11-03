@@ -1,0 +1,43 @@
+Package: customermodels
+Type: Package
+Title: Packages, Data and Scripts for the Customer Models Course
+Version: 2026.1.0
+Authors@R: person("Roelof", "Hars", email = "r.p.hars@rug.nl",
+                  role = c("aut", "cre"))
+Description: One-step setup for the Customer Models course. Installing this
+    package installs every R package used in the lectures, and loading it
+    attaches them. It also ships the course datasets (read with cm_data(), so
+    no setwd() is needed) and the lecture scripts (copied with cm_script()).
+    The test suite re-estimates every lecture model and compares the results
+    with stored reference values, so package updates that change or break
+    course results are caught automatically. Note: VGAM must stay first under
+    Depends, so that AER::tobit() and lmtest::lrtest() mask VGAM's versions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.3),
+    VGAM,
+    AER,
+    censReg,
+    ggplot2,
+    Hmisc,
+    lmtest,
+    MASS,
+    mfx,
+    mlogit,
+    sampleSelection,
+    shiny,
+    survival,
+    survminer
+Imports:
+    DiagrammeR,
+    patchwork,
+    plotly,
+    utils
+Suggests:
+    countreg,
+    jsonlite,
+    testthat (>= 3.0.0)
+Additional_repositories: https://R-Forge.R-project.org
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1

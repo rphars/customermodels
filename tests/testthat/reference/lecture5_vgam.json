@@ -1,0 +1,90 @@
+{
+  "truncnb_coef": {
+    "(Intercept):1": 1.14141081151113,
+    "(Intercept):2": -0.923241449688169,
+    "type.fWebsite": -0.529568752272231,
+    "type.fDesign(print,product)": -0.277901155611119,
+    "type.fOther": -0.448247369390442,
+    "num_awards": 0.13645393395434,
+    "award_assured": 0.629349762165562,
+    "award_amount_USD": 0.315080351448102
+  },
+  "zip_coef": {
+    "(Intercept):1": 0.13651260185256,
+    "(Intercept):2": 1.67732760947685,
+    "factor(type)Website:1": 0.599964918560851,
+    "factor(type)Website:2": -0.374102856355863,
+    "factor(type)Design(print,product):1": 0.401921160247442,
+    "factor(type)Design(print,product):2": -0.26834994968157,
+    "factor(type)Other:1": 0.471875285060598,
+    "factor(type)Other:2": -0.309785558124561,
+    "num_awards:1": -0.0884728577611346,
+    "num_awards:2": 0.147663046284562,
+    "award_assured:1": -1.02924967047772,
+    "award_assured:2": 0.50091673119831,
+    "award_amount_USD:1": -0.0762763298560034,
+    "award_amount_USD:2": 0.172643116499715
+  },
+  "zip_loglik": [
+    -13415.3709298661
+  ],
+  "zinb_coef": {
+    "(Intercept):1": -1.07148153877466,
+    "(Intercept):2": 1.20181634117012,
+    "(Intercept):3": -0.882454681255028,
+    "factor(type)Website:1": 0.844306070002052,
+    "factor(type)Website:2": -0.535039135563713,
+    "factor(type)Design(print,product):1": 0.558477149426322,
+    "factor(type)Design(print,product):2": -0.30907984670888,
+    "factor(type)Other:1": 0.662900567172433,
+    "factor(type)Other:2": -0.45316166754128,
+    "num_awards:1": -0.163212432231093,
+    "num_awards:2": 0.131895796107507,
+    "award_assured:1": -3.14072547847045,
+    "award_assured:2": 0.636043559591944,
+    "award_amount_USD:1": -0.0771702656930495,
+    "award_amount_USD:2": 0.267811332604956
+  },
+  "zinb_loglik": [
+    -7805.63285649628
+  ],
+  "zap_coef": {
+    "(Intercept):1": 0.141988750796085,
+    "(Intercept):2": 1.67739291249604,
+    "factor(type)Website:1": 0.60853591652448,
+    "factor(type)Website:2": -0.373936303523809,
+    "factor(type)Design(print,product):1": 0.406780946694162,
+    "factor(type)Design(print,product):2": -0.268365201845046,
+    "factor(type)Other:1": 0.477898970024103,
+    "factor(type)Other:2": -0.309771465353357,
+    "num_awards:1": -0.0891739234517536,
+    "num_awards:2": 0.147670663248946,
+    "award_assured:1": -1.03466100178388,
+    "award_assured:2": 0.500845495239074,
+    "award_amount_USD:1": -0.0796450449257439,
+    "award_amount_USD:2": 0.172597478123708
+  },
+  "zap_loglik": [
+    -13415.4750655716
+  ],
+  "zanb_coef": {
+    "(Intercept):1": 0.141988750796083,
+    "(Intercept):2": 1.14138173900353,
+    "(Intercept):3": -0.92324330263046,
+    "factor(type)Website:1": 0.608535916524477,
+    "factor(type)Website:2": -0.52958474502449,
+    "factor(type)Design(print,product):1": 0.406780946694148,
+    "factor(type)Design(print,product):2": -0.27789544223363,
+    "factor(type)Other:1": 0.477898970024106,
+    "factor(type)Other:2": -0.448242221191993,
+    "num_awards:1": -0.0891739234517616,
+    "num_awards:2": 0.136453437231108,
+    "award_assured:1": -1.03466100178382,
+    "award_assured:2": 0.629354045696434,
+    "award_amount_USD:1": -0.0796450449257427,
+    "award_amount_USD:2": 0.315124652376757
+  },
+  "zanb_loglik": [
+    -7804.61898727325
+  ]
+}

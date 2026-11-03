@@ -1,0 +1,28 @@
+{
+  "coef": {
+    "(Intercept):econometrics_pr": -5.19146221984244,
+    "(Intercept):marketing_pr": 3.3616360775453,
+    "marketing:econometrics_pr": 0.000346107391136891,
+    "marketing:marketing_pr": 0.0537280276125188,
+    "math:econometrics_pr": 0.0652476805524177,
+    "math:marketing_pr": -0.0533400680369635,
+    "leadership:econometrics_pr": 0.0304512637993663,
+    "leadership:marketing_pr": -0.0546000943016877,
+    "reading.writing:econometrics_pr": 0.0171607832175011,
+    "reading.writing:marketing_pr": -0.0170355559722066
+  },
+  "loglik": [
+    -168.919035979938
+  ],
+  "loglik_small": [
+    -178.114227435063
+  ],
+  "mem_math": {
+    "history_pr": -0.00667752079741568,
+    "econometrics_pr": 0.0217340997532567,
+    "marketing_pr": -0.015056578955841
+  },
+  "hitrate": [
+    0.61
+  ]
+}

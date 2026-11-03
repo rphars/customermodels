@@ -1,0 +1,15 @@
+{
+  "created": "2026-11-03 21:49",
+  "R": "R version 4.6.2 (2026-10-29)",
+  "platform": "x86_64-pc-linux-gnu",
+  "packages": {
+    "customermodels": "2026.1.0",
+    "mfx": "1.2.4",
+    "mlogit": "2.0.0",
+    "AER": "1.2.17",
+    "sampleSelection": "1.2.16",
+    "MASS": "7.3.66",
+    "VGAM": "1.1.14",
+    "survival": "3.8.12"
+  }
+}

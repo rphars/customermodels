@@ -1,0 +1,29 @@
+{
+  "poisson_coef": {
+    "(Intercept)": 3.4395587178244,
+    "type.fWebsite": -1.40618243148366,
+    "type.fDesign(print,product)": -1.0654468993303,
+    "type.fOther": -1.0731531735771,
+    "num_awards": -0.0190283870818748,
+    "award_assured": 0.37232168824428,
+    "award_amount_USD": 0.450687921998393
+  },
+  "dispersion_stat": [
+    26.5989335310895
+  ],
+  "nb_coef": {
+    "(Intercept)": 3.2652304955014,
+    "type.fWebsite": -1.4667073314951,
+    "type.fDesign(print,product)": -1.00771342854194,
+    "type.fOther": -1.06773011753218,
+    "num_awards": 0.00550618070501321,
+    "award_assured": 0.364585960741248,
+    "award_amount_USD": 0.675262820257367
+  },
+  "nb_theta": [
+    2.9967774595653
+  ],
+  "nb_loglik": [
+    -14811.267261168
+  ]
+}
