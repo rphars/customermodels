@@ -24,8 +24,6 @@ data <- cm_data("telco_churn")  # loads a dataset, no setwd() needed
 
 `cm_datasets()` and `cm_scripts()` list what's available.
 
-The lecture 5 alternative using **countreg** needs one extra install, because
-countreg is not on CRAN:
 
 ```r
 install.packages("countreg", repos = "https://R-Forge.R-project.org")
