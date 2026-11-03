@@ -81,11 +81,14 @@ cm_script <- function(name, dir = ".", open = interactive()) {
   invisible(dest)
 }
 
-# Open a file in the RStudio/Positron editor. Elsewhere (plain R in a
-# terminal) just say where the file is, instead of R's own popup editor.
+# Open a file in an editor where one is available: RStudio/Positron, or the
+# script editor of the standard R program on Windows (Rgui) and macOS (R.app).
+# Elsewhere (terminal, VS Code, ...) just say where the file is.
 open_in_editor <- function(path) {
   if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
     rstudioapi::navigateToFile(path)
+  } else if (.Platform$GUI %in% c("Rgui", "AQUA")) {
+    utils::file.edit(path)
   } else {
     message("Open it in your editor: ", normalizePath(path))
   }
