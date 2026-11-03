@@ -37,6 +37,7 @@ Imports:
 Suggests:
     countreg,
     jsonlite,
+    rstudioapi,
     testthat (>= 3.0.0)
 Additional_repositories: https://R-Forge.R-project.org
 Config/testthat/edition: 3

@@ -20,7 +20,7 @@
 #' @examples
 #' telco <- cm_data("telco_churn")
 #' flyer <- cm_data("cm_lecture5_flyer.csv")
-#' @importFrom utils read.csv file.edit
+#' @importFrom utils read.csv
 #' @export
 cm_data <- function(name) {
   name <- sub("\\.csv$", "", name)
@@ -77,6 +77,16 @@ cm_script <- function(name, dir = ".", open = interactive()) {
     file.copy(src, dest)
     message("Copied ", name, ".R to ", normalizePath(dir))
   }
-  if (open) file.edit(dest)
+  if (open) open_in_editor(dest)
   invisible(dest)
+}
+
+# Open a file in the RStudio/Positron editor. Elsewhere (plain R in a
+# terminal) just say where the file is, instead of R's own popup editor.
+open_in_editor <- function(path) {
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    rstudioapi::navigateToFile(path)
+  } else {
+    message("Open it in your editor: ", normalizePath(path))
+  }
 }
